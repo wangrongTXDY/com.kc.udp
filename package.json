@@ -1,0 +1,20 @@
+{
+  "name": "com.kc.udp",
+  "displayName": "KC.UDP",
+  "version": "0.1.0",
+  "unity": "2022.3",
+  "author": "WangRong <3340681993@qq.com>",
+  "dependencies": {
+     },
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:wangrongTXDY/com.kc.udp.git"
+  },
+  "keywords": [
+    "kc"
+  ],
+  "license": "MIT"
+}
