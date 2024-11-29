@@ -8,17 +8,9 @@ namespace KC
     /// <summary>
     /// udp管理组件
     /// </summary>
-    public class UDPManagerComponent
+    public class UDPManager:Singleton<UDPManager>,ISingletonAwake,IDestroy
     {
         private Dictionary<string, UDP> _udpClients;
-        
-        /// <summary>
-        /// 构造表记录
-        /// </summary>
-        public void Init()
-        {
-            _udpClients = new Dictionary<string, UDP>();
-        }
         
         /// <summary>
         /// 创建UDP连接
@@ -69,10 +61,15 @@ namespace KC
             }
         }
 
-        public void Destroy()
+        public override void Destroy()
         {
             RemoveAllUdp();
             _udpClients = null;
+        }
+
+        public void Awake()
+        {
+            _udpClients = new Dictionary<string, UDP>();
         }
     }
 }

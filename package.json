@@ -1,7 +1,7 @@
 {
   "name": "com.kc.udp",
   "displayName": "KC.UDP",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "unity": "2022.3",
   "author": "WangRong <3340681993@qq.com>",
   "scripts": {
